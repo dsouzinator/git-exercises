@@ -11,7 +11,13 @@ It is strongly recommended that you use a git extension for your IDE to complete
 
 ## Setup
 1. Fork the [PyTorch](https://github.com/pytorch) repository to your GitHub account.
-2. Clone the forked repository to your local machine.
+2. Clone the forked repository to your local machine by running the following command in the terminal:
+```
+git clone -n --depth=1 --filter=tree:0 <your repo url>
+cd torch
+git sparse-checkout set --no-cone torch/nn
+git checkout
+```
 3. Open the repository in your IDE.
 
 ## Exercise 1: Create and fix a merge conflict
