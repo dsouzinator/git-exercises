@@ -43,7 +43,7 @@ git checkout
 ## Exercise 3: Create and approve a pull request
 
 1. Create a new branch called `pull-request` from `main` branch.
-2. In the `torch/nn/functional.py` file, navigate to the `l1_loss` function and add code to check if the reduction more is `sum` and raise an exception:
+2. In the `torch/nn/functional.py` file, navigate to the `l1_loss` function and add code to check if the reduction mode is `sum` and raise an exception:
 3. Commit the changes to the `pull-request` branch. Make sure you add a meaningful commit message.
 4. Push the `pull-request` branch to the remote repository.
 5. Create a pull request to merge the `pull-request` branch into the `main` branch.
