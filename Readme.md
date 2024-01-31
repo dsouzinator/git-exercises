@@ -10,7 +10,7 @@ You will perform three tasks in this exercise.
 It is strongly recommended that you use a git extension for your IDE to complete this lab. If you are using Visual Studio Code, you can use the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension. 
 
 ## Setup
-1. Fork the [PyTorch](https://github.com/pytorch) repository to your GitHub account.
+1. Fork the [PyTorch](https://github.com/pytorch/pytorch) repository to your GitHub account.
 2. Clone the forked repository to your local machine by running the following command in the terminal:
 ```
 git clone -n --depth=1 --filter=tree:0 <your repo url>
