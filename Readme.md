@@ -10,52 +10,34 @@ You will perform three tasks in this exercise.
 It is strongly recommended that you use a git extension for your IDE to complete this lab. If you are using Visual Studio Code, you can use the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension. 
 
 ## Setup
-1. Fork this repository to your GitHub account.
+1. Fork the [PyTorch](https://github.com/pytorch) repository to your GitHub account.
 2. Clone the forked repository to your local machine.
 3. Open the repository in your IDE.
 
 ## Exercise 1: Create and fix a merge conflict
 
 1. Create a new branch called `merge-conflict` from `main` branch.
-2. Create a new file called `the-conflict.txt` and add the following text to it:
-```
-This file will cause a merge conflict
-```
+2. Open the `torch/nn/functional.py` file, navigate to the `interpolate` function and change the resizing mode from `nearest` to `bilinear`:
 3. Commit the changes to the `merge-conflict` branch. Make sure you add a meaningful commit message.
 4. Switch back to `main` branch.
-5. Create a new file called `the-conflict.txt` and add the following text to it:
-```
-Peace not conflict is the way forward
-```
+5. Open the `torch/nn/functional.py` file, navigate to the `interpolate` function and change the resizing mode from `nearest` to `bicubic` and `align_corners` to `True`:
 6. Commit the changes to the `main` branch. Make sure you add a meaningful commit message.
 7. Merge the `merge-conflict` branch into the `main` branch.
-8. Resolve the merge conflict by keeping the following text in the file:
-```
-Sometimes to make peace you need to compromise
-```
+8. Resolve the merge conflict by keeping the resizing mode `bilinear` and `align_corners` `True`.
 9. Commit the changes to the `main` branch. Make sure you add a meaningful commit message.
 
 ## Exercise 2: Amend a commit
 
 1. Create a new branch called `amend-commit` from `main` branch.
-2. Create a new file called `amend-commit.txt` and add the following text to it:
-```
-This file will be amended
-```
+2. In the `torch/nn/functional.py` file, navigate to the `upsample_nearest` function and change the resizing mode from `nearest` to `quadratic` in the return statement:
 3. Commit the changes to the `amend-commit` branch. Make sure you add a meaningful commit message.
-4. Amend the commit by adding the following text to the file:
-```
-This file has been amended
-```
+4. Amend the commit by changing the resizing mode from `quadratic` to `nearest` in the return statement.
 5. Commit the changes to the `amend-commit` branch. Make sure you add a meaningful commit message.
 
 ## Exercise 3: Create and approve a pull request
 
 1. Create a new branch called `pull-request` from `main` branch.
-2. Create a new file called `pull-request.txt` and add the following text to it:
-```
-This file will be merged via a pull request
-```
+2. In the `torch/nn/functional.py` file, navigate to the `l1_loss` function and add code to check if the reduction more is `sum` and raise an exception:
 3. Commit the changes to the `pull-request` branch. Make sure you add a meaningful commit message.
 4. Push the `pull-request` branch to the remote repository.
 5. Create a pull request to merge the `pull-request` branch into the `main` branch.
