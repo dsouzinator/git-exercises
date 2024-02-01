@@ -70,4 +70,9 @@ git checkout
 - `git push origin --delete <branch-name>` - deletes the specified branch from the remote repository
 
 
+## Resources
+- [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [Git Documentation](https://git-scm.com/doc)
+- [Git Exercises](https://gitexercises.fracz.com/)
 
