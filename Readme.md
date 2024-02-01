@@ -35,9 +35,9 @@ git checkout
 ## Exercise 2: Amend a commit
 
 1. Create a new branch called `amend-commit` from `main` branch.
-2. In the `torch/nn/functional.py` file, navigate to the `upsample_nearest` function and change the resizing mode from `nearest` to `quadratic` in the return statement:
+2. In the `torch/nn/functional.py` file, navigate to the `multi_margin_loss` function(line 3566) and change the margin to 1.5 and reduction mode to `sum'
 3. Commit the changes to the `amend-commit` branch. Make sure you add a meaningful commit message.
-4. Amend the commit by changing the resizing mode from `quadratic` to `nearest` in the return statement.
+4. Amend the commit by changing the margin to 2.0
 5. Commit the changes to the `amend-commit` branch. Make sure you add a meaningful commit message.
 
 ## Exercise 3: Create and approve a pull request
