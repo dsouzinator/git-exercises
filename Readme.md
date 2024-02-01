@@ -14,7 +14,7 @@ It is strongly recommended that you use a git extension for your IDE to complete
 2. Clone the forked repository to your local machine by running the following command in the terminal:
 ```
 git clone -n --depth=1 --filter=tree:0 <your repo url>
-cd torch
+cd pytorch
 git sparse-checkout set --no-cone torch/nn
 git checkout
 ```
