@@ -5,7 +5,6 @@ You will perform three tasks in this exercise.
 
 - [ ] Create and fix a merge conflict
 - [ ] Amend a commit
-- [ ] Create and approve a pull request
 
 It is strongly recommended that you use a git extension for your IDE to complete this lab. If you are using Visual Studio Code, you can use the [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) extension. 
 
